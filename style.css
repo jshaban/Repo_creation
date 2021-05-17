@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: tomato;
+}
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: olivedrab;
+    
+}
+
+.container {
+    max-width: 1200px;
+    height: 400px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    
+}
+
+.item {
+    padding: 10px;
+    flex-basis: 33.333%;
+    flex-grow: 1;
+    background-color: teal; 
+    border: 1px solid black; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; /* szövegek középre igazítása miatt van ez a 3 sor */
+color: white;
+}
+.item:first-child {
+    background-color: red;
+    flex-basis: 100%;
+}
+
+
